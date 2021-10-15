@@ -1,38 +1,63 @@
+body {
+  background-color: lightgrey !important;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.App input {
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.Result {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.User {
+  width: 218px;
+  height: 218px;
+  text-align: center;
+  background-color: grey;
+  margin: 1%;
+  position: relative;
+  border-radius: 2%;
+}
+
+.Remove {
+  position: absolute;
+  cursor: pointer;
+  top: 2%;
+  right: 3%;
+  font-size: 20px;
+}
+
+img {
+  margin-top: 10%;
+  border-radius: 50%;
+}
+
+p {
+  margin: 10px;
+  font-size: 12px;
+}
+
+h1 {
+  font-weight: lighter;
 }
